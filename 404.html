@@ -1,5 +1,12 @@
-<script>
-    const redirectTo = window.location.pathname.replace('/portfolio/', '/');
-    window.location.replace(`/${redirectTo}`);
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="refresh" content="0; url=/" />
+  <script>
+    // GitHub Pages fallback for React Router
+    const redirect = window.location.pathname.replace('/portfolio', '');
+    window.location.replace('/portfolio' + redirect);
   </script>
-  
+</head>
+<body></body>
+</html>
