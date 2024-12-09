@@ -3,7 +3,9 @@
 <head>
   <script>
     const currentPath = window.location.pathname;
-    if (!currentPath.startsWith('/portfolio')) {
+
+    // Check if the path is already under /portfolio, if not, redirect
+    if (!currentPath.includes('/portfolio')) {
       const redirectPath = '/portfolio' + currentPath;
       window.location.replace(redirectPath);
     }
