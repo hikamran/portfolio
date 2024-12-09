@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- <meta http-equiv="refresh" content="0; url=./index.html" /> -->
-    <script>
-      // const redirect = window.location.pathname.replace('/portfolio', '');
-      // window.location.replace('/portfolio' + redirect);
-    </script>
-  </head>
-  <body></body>
+<head>
+  <script>
+    // Redirect to the correct React Router path
+    var pathname = window.location.pathname;
+    var basePath = '/portfolio'; // Replace with your base path
+    if (pathname.startsWith(basePath)) {
+      var newPath = pathname.replace(basePath, '');
+      window.location.replace(basePath + '/index.html?' + newPath);
+    } else {
+      window.location.replace(basePath + '/index.html');
+    }
+  </script>
+</head>
+<body>
+</body>
 </html>
