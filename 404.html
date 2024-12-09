@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Not Found</title>
-</head>
-<body>
+  <meta http-equiv="refresh" content="0; url=/" />
   <script>
-    // Redirect to index.html with the correct path
-    window.location.href = window.location.href.replace('/portfolio', '/portfolio/');
+    const redirect = window.location.pathname.replace('/portfolio', '');
+    window.location.replace('/portfolio' + redirect);
   </script>
-</body>
+</head>
+<body></body>
 </html>
