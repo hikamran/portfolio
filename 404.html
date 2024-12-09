@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- <meta content="0; url=/portfolio" /> -->
-    <script>
-      const redirect = window.location.pathname.replace("/portfolio", "");
-      window.location.replace("/portfolio" + redirect);
-    </script>
-  </head>
-  <body></body>
+<head>
+  <script>
+    const currentPath = window.location.pathname;
+    if (!currentPath.startsWith('/portfolio')) {
+      const redirectPath = '/portfolio' + currentPath;
+      window.location.replace(redirectPath);
+    }
+  </script>
+</head>
+<body></body>
 </html>
