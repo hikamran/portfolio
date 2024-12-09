@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <script>
-    const currentPath = window.location.pathname;
-
-    // Check if the path is already under /portfolio, if not, redirect
-    if (!currentPath.includes('/portfolio')) {
-      const redirectPath = '/portfolio' + currentPath;
-      window.location.replace(redirectPath);
-    }
-  </script>
-</head>
-<body></body>
+  <head>
+    <meta http-equiv="refresh" content="0; URL='/portfolio'" />
+  </head>
+  <body></body>
 </html>
