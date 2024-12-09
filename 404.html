@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <script>
-    // Redirect to the correct React Router path
-    var pathname = window.location.pathname;
-    var basePath = '/portfolio'; // Replace with your base path
-    if (pathname.startsWith(basePath)) {
-      var newPath = pathname.replace(basePath, '');
-      window.location.replace(basePath + '/index.html?' + newPath);
-    } else {
-      window.location.replace(basePath + '/index.html');
-    }
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found</title>
 </head>
 <body>
+  <script>
+    // Redirect to index.html with the correct path
+    window.location.href = window.location.href.replace('/portfolio', '/portfolio/');
+  </script>
 </body>
 </html>
